@@ -65,7 +65,12 @@
 // countLaps()
 // console.log(lapsCompleted)
 
-function increment() {
+let count = 0
 
-	document.getElementById("count-el").innerHTML = 1 
+function increment() {
+	countEl = document.getElementById("count-el")
+
+	count = count + 1
+
+	countEl.innerHTML = count   
 }
