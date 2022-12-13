@@ -67,10 +67,19 @@
 
 let count = 0
 
+let saveCount = 0
+
 function increment() {
 	countEl = document.getElementById("count-el")
 
 	count = count + 1
 
-	countEl.innerHTML = count   
+	countEl.innerHTML = count
+
 }
+
+function save() {
+	console.log(count)
+}
+
+save();
