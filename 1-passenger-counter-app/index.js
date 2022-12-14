@@ -65,6 +65,19 @@
 // countLaps()
 // console.log(lapsCompleted)
 
+// let username = "per"
+// let message = "You have three now notifications"
+// console.log(message + ", " + username + "!")
+
+// let messageToUser = message + ", " + username + "!"
+// console.log(messageToUser)
+
+
+// let name = "Maurício"
+// let greeting = "Hi, my name is "
+// let myGreeting = greeting + name
+// console.log(myGreeting) 
+
 let count = 0
 
 let saveCount = 0
@@ -82,4 +95,4 @@ function save() {
 	console.log(count)
 }
 
-save();
+// save();
