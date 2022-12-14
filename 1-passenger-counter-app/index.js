@@ -1,3 +1,4 @@
+
 // document.getElementById("count-el").innerText = 5;
 
 // let firstBatch = 5;
@@ -80,10 +81,8 @@
 
 let count = 0
 
-let saveCount = 0
-
 function increment() {
-	countEl = document.getElementById("count-el")
+	let countEl = document.getElementById("count-el")
 
 	count = count + 1
 
@@ -96,3 +95,15 @@ function save() {
 }
 
 // save();
+
+// ====================
+// test _1.html
+// ====================
+/*global console , $ , document*/
+/*eslint-disable no-console*/
+
+let welcomeEl = document.getElementById("welcome-el")
+let name = "Maurício"
+let greeting = "Hi, my name is" + " " + name
+
+welcomeEl.innerText = greeting
