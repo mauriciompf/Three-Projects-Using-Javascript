@@ -38,13 +38,15 @@ h2 {
 .buttons {
 	display: flex;
 	flex-direction: column;
-	width: 15%;
-	margin: 0 auto;
+	width: 100%;
 }
 
 #increment-btn,
 #save-btn {
+	width: 30%;
+	margin: 0 auto;
 	padding: 1rem 2rem;
+	
 	border: none;
 	border-radius: .5rem;
 	font-weight: 700;
