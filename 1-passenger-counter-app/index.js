@@ -7,6 +7,11 @@ function increment() {
 	countEl.textContent = count
 }
 
+function decrement() {
+	count -= 1
+	countEl.textContent = count
+}
+
 function save() {
 	let saveP = count + " - " 
 	saveEl.textContent += saveP
