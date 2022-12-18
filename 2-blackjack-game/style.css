@@ -1,0 +1,40 @@
+body {
+	background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.J-MsZuHSKvvq1job0H4VqAHaE_%26pid%3DApi&f=1&ipt=215ba409af1d7407623578950e1f99ae0d53f19d911110a2f55f3c9bff04a41c&ipo=images");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+
+	font-family: 'arial', 'helvetica', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+	height: 92.1vh;
+	text-align: center;
+}
+
+h1 {
+	color: goldenrod;
+}
+
+#message-el {
+	font-style: italic;
+}
+
+button {
+	padding: .5rem 5rem;
+
+	cursor: pointer;
+	background-color: goldenrod;
+	color: green;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: bolder;
+	border: none;
+	border-radius: .5rem;
+}
+
+button:hover,
+button:focus {
+	box-shadow: 0 0 1rem black;
+	outline: none;
+}
