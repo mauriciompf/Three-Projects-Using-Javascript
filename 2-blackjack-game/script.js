@@ -1,25 +1,42 @@
 // Blackjack logic win and lose
-let fcard = 10
-let scard = 4
+let fcard = getRandomCard()
+let scard = getRandomCard()
 let cards = [fcard, scard]
 
+// logic data type
 let sum = fcard + scard
 let hasBackJack = false
 let isAlive = true
 
+// Get elementy in document  
 let messageEl = document.querySelector("#message-el")
 let cardEl = document.querySelector(".card-el")
 let sumEl = document.querySelector(".sum-el")
 let message = " "
 
+// Random Card Function
+function getRandomCard() {
+	return 5
+}
+
+
+// Start the game using function renderGame()
 function startGame() {
 	renderGame()
 }
 
+// All the logic of the game 
 function renderGame() {
+	// show all the cards in "cards:" 
 	cardEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+
+	for (i = 2; i < cards.length; i++) {
+		cardEl.textContent += " " + cards[i]
+	}
+
  	sumEl.textContent = "Sum: " + sum
 
+ 	// sum the numbers and display out the message
 	if (sum <= 20) {
 		message = "Do you want to draw a new card?"
 	} else if (sum === 21) {
@@ -34,16 +51,11 @@ function renderGame() {
 }
 
 function newCard() {
-	let card = 11
+	let card = getRandomCard()
 	sum += card
 	startGame()
 	cards.push(card)
 	renderGame()
-
-	for (i = 2; i < cards.length; i++) {
-		cardEl.textContent += " " + cards[i]
-	}
-
 }
 
 // Old enough for enter the club
