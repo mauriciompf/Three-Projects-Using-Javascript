@@ -16,13 +16,18 @@ let message = " "
 
 // Random Card Function
 function getRandomCard() {
-	return 5
+	let randomNumber = Math.floor(Math.random() * 13) + 1
+	if (randomNumber === 1) {
+		return 11
+	}
+	return randomNumber
 }
 
 
 // Start the game using function renderGame()
 function startGame() {
 	renderGame()
+	getRandomCard()
 }
 
 // All the logic of the game 
