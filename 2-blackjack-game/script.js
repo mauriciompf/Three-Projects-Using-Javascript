@@ -1,12 +1,10 @@
 // Blackjack logic win and lose
-let fcard = getRandomCard()
-let scard = getRandomCard()
-let cards = [fcard, scard]
 
 // logic data type
-let sum = fcard + scard
+let cards = [] /*[fcard, scard]*/
+let sum = 0 /*fcard + scard*/
 let hasBackJack = false
-let isAlive = true
+let isAlive = false
 
 // Get elementy in document  
 let messageEl = document.querySelector("#message-el")
@@ -17,17 +15,27 @@ let message = " "
 // Random Card Function
 function getRandomCard() {
 	let randomNumber = Math.floor(Math.random() * 13) + 1
+	
 	if (randomNumber === 1) {
 		return 11
+	} else if (randomNumber > 10) {
+		return 10
+	} else {
+		return randomNumber
 	}
-	return randomNumber
 }
-
 
 // Start the game using function renderGame()
 function startGame() {
+	isAlive = true;
+	
+	let fCard = getRandomCard()
+	let sCard = getRandomCard()
+
+	cards = [fCard, sCard]
+	sum = cards[0] + cards[1]
+
 	renderGame()
-	getRandomCard()
 }
 
 // All the logic of the game 
@@ -58,7 +66,6 @@ function renderGame() {
 function newCard() {
 	let card = getRandomCard()
 	sum += card
-	startGame()
 	cards.push(card)
 	renderGame()
 }
