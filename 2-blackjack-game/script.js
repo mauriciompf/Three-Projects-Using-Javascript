@@ -12,6 +12,15 @@ let cardEl = document.querySelector(".card-el")
 let sumEl = document.querySelector(".sum-el")
 let message = " "
 
+let player = {
+	name: "Per",
+	chips: 145
+}
+
+let playerEl = document.querySelector(".player-el")
+
+playerEl.textContent = player.name + " $:" + " " + player.chips
+
 // Random Card Function
 function getRandomCard() {
 	let randomNumber = Math.floor(Math.random() * 13) + 1
@@ -64,10 +73,15 @@ function renderGame() {
 }
 
 function newCard() {
-	let card = getRandomCard()
-	sum += card
-	cards.push(card)
-	renderGame()
+	if (isAlive === true && hasBackJack === false) {
+		let card = getRandomCard()
+		sum += card
+		cards.push(card)
+		renderGame()
+	} else {
+		messageEl.textContent = "You can't add news cards"
+	}
+
 }
 
 // Old enough for enter the club
