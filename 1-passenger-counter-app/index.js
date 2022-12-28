@@ -13,7 +13,7 @@ function decrement() {
 }
 
 function save() {
-	let saveP = count + " - " 
+	let saveP = count + " - "
 	saveEl.textContent += saveP
 
 	count = 0
