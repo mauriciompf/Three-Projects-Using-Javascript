@@ -1,5 +1,17 @@
 # javascript three sites examples
 
-Javascript learning from freeCodeCamp.org | Javascript Programming - Full Course (https://youtu.be/jS4aFq5-91M)
+Javascript learning from [freeCodeCamp.org](https://www.freecodecamp.org/) | [Javascript Programming - Full Course](https://youtu.be/jS4aFq5-91M)
 
 In this course, I intend to understand the fundamentals of the javascript language by creating interactive websites.
+
+## Passenger
+
+---
+
+![passenger](./img/1-passenger.png)
+
+## BlackJack Game
+
+---
+
+![blackjack](./img/2-blackjack.png)
