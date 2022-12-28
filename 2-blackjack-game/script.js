@@ -1,8 +1,8 @@
 // Blackjack logic win and lose
 
 // logic data type
-let cards = [] /*[fcard, scard]*/
-let sum = 0 /*fcard + scard*/
+let cards = []
+let sum = 0
 let hasBackJack = false
 let isAlive = false
 
@@ -38,6 +38,7 @@ function getRandomCard() {
 function startGame() {
 	isAlive = true;
 	
+	// Get Random Card
 	let fCard = getRandomCard()
 	let sCard = getRandomCard()
 
@@ -55,7 +56,6 @@ function renderGame() {
 	for (i = 2; i < cards.length; i++) {
 		cardEl.textContent += " " + cards[i]
 	}
-
  	sumEl.textContent = "Sum: " + sum
 
  	// sum the numbers and display out the message
@@ -68,7 +68,6 @@ function renderGame() {
 		message = "You are out of the game!"
 		isAlive = false
 	}
-
 	messageEl.textContent = message
 }
 
@@ -81,27 +80,4 @@ function newCard() {
 	} else {
 		messageEl.textContent = "You can't add news cards"
 	}
-
 }
-
-// Old enough for enter the club
-// let age = 22
-
-// let ageEnter = 21
-
-// if (age >= ageEnter) {
-// 	console.log("Welcome!")
-// } else {
-// 	console.log("You can not enter the club")
-// }
-
-// Old enough for a birthday card from the King (100)
-// if (age < 100) {
-// 	console.log("Not a elegible")
-// } else if (age === 100) {
-// 	console.log("Here is your birthday card from the King!")
-// } else {
-// 	console.log("Not elegible, you have already gotten one")
-// }
-
-// Counting
