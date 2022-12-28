@@ -1,4 +1,4 @@
-# Three Projects Usinging Javascript
+# Three Projects Using Javascript
 
 Javascript learning from [freeCodeCamp.org](https://www.freecodecamp.org/) | [Javascript Programming - Full Course](https://youtu.be/jS4aFq5-91M)
 
