@@ -5,14 +5,13 @@
 }
 
 body {
-    font-family: "helvetica", "arial", sans-serif;
+    font-family: helvetica, arial, sans-serif;
     font-weight: 700;
     text-align: center;
     display: grid;
     place-items: center;
-
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
 
     background-image: url("../img/passenger_black.jpeg");
     background-repeat: no-repeat;
@@ -23,7 +22,7 @@ body {
 .items {
     background-color: black;
     color: white;
-    width: 100%;
+    min-width: 100%;
 }
 
 h1 {
@@ -38,13 +37,12 @@ h2 {
 .buttons {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 #increment-btn,
 #decrement-btn,
 #save-btn {
-    width: 30%;
+    min-width: 15%;
     margin: 0 auto;
     padding: 1rem 2rem;
 
@@ -55,6 +53,7 @@ h2 {
     margin-bottom: 1rem;
     background-color: darkred;
     color: white;
+    text-transform: uppercase;
 }
 
 #increment-btn:hover,

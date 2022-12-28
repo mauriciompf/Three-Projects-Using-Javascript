@@ -6,32 +6,32 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-#input-el {
-	min-width: 100%;
-	padding: calc(10rem / 16);
-
+#input-el,
+#input-btn {
 	outline: none;
 	border: none;
+}
+
+#input-el {
+	min-width: 100%;
+	padding: calc(10rem / 16); /* 10px */
+
 	border: 1px solid #577D3F;
 }
 
 #input-btn {
-	border: none;
-	outline: none;
-	padding: calc(10rem / 16) calc(20rem / 16);
+	padding: calc(10rem / 16) /* 10px */ calc(20rem / 16); /* 20px */
  
 	background-color: #577D3F;
-	color: white;
+	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: calc(4rem / 16) 0;
 	cursor: pointer;
 }
 
-#input-el:focus,
-#input-el:hover,
-#input-btn:focus,
-#input-btn:hover {
+#input-el:focus, #input-el:hover,
+#input-btn:focus, #input-btn:hover {
 	box-shadow: 0 0 .2rem black;
 }
 

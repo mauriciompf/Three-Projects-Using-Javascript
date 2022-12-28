@@ -4,11 +4,11 @@ body {
 	background-size: cover;
 	background-position: 100% 100%;
 
-	font-family: 'arial', 'helvetica', sans-serif;
-	color: white;
+	font-family: arial, helvetica, sans-serif;
+	color: #fff;
 	font-weight: 700;
 	font-size: 2rem;
-	height: 92.1vh;
+	min-height: 92.1vh;
 	text-align: center;
 }
 
