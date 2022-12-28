@@ -20,8 +20,6 @@ function save() {
 	countEl.textContent = count
 }
 
-// save();
-
 // ====================
 // test _1.html
 // ====================
