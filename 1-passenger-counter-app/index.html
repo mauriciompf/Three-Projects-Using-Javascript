@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-		Passenger Counter App
-	</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<!-- How many passengers are in the station? -->
-	<div class="items">
-		<h1>
-			People entered:
-		</h1>
-		
-		<h2 id="count-el">
-			0
-		</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passenger Counter App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- How many passengers are in the station? -->
+    <div class="items">
+      <h1>People entered:</h1>
 
-		<div class="buttons">
-			<div class="red-btn">
-				<button id="increment-btn" onclick="increment()">
-					INCREMENT
-				</button>
-				<button id="decrement-btn" onclick="decrement()">
-					DECREMENT
-				</button>
-			</div>
-			
-			<button id="save-btn" onclick="save()">
-				SAVE
-			</button>
+      <h2 id="count-el">0</h2>
 
-		</div>
+      <div class="buttons">
+        <div class="red-btn">
+          <button id="increment-btn" onclick="increment()">INCREMENT</button>
+          <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+        </div>
 
-		<p style="font-size: 1.5rem">
-			Previous entries: <span id="save-el"></span> 
-		</p>
+        <button id="save-btn" onclick="save()">SAVE</button>
+      </div>
 
-		<br>
-	</div>
-	<script src="index.js"></script>
-</body>
+      <p style="font-size: 1.5rem">
+        Previous entries: <span id="save-el"></span>
+      </p>
+
+      <br />
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
