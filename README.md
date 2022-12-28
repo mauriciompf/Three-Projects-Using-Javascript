@@ -6,12 +6,8 @@ In this course, I intend to understand the fundamentals of the javascript langua
 
 ## Passenger
 
----
-
 ![passenger](./img/1-passenger.png)
 
 ## BlackJack Game
-
----
 
 ![blackjack](./img/2-blackjack.png)
