@@ -32,7 +32,7 @@
 
 #input-el:focus, #input-el:hover,
 #input-btn:focus, #input-btn:hover {
-	box-shadow: 0 0 .2rem black;
+	box-shadow: 0 0 .2rem #577D3F;
 }
 
 #input-btn:active {
