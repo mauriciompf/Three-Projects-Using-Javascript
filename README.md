@@ -1,4 +1,4 @@
-# javascript three sites examples
+# Three Projects Using Javascript
 
 Javascript learning from [freeCodeCamp.org](https://www.freecodecamp.org/) | [Javascript Programming - Full Course](https://youtu.be/jS4aFq5-91M)
 
@@ -6,12 +6,8 @@ In this course, I intend to understand the fundamentals of the javascript langua
 
 ## Passenger
 
----
-
 ![passenger](./img/1-passenger.png)
 
 ## BlackJack Game
-
----
 
 ![blackjack](./img/2-blackjack.png)
