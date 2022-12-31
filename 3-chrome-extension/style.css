@@ -11,22 +11,20 @@
 	min-width: calc(400rem / 16);
 }
 
-#input-el,
-#input-btn,
-#delete-btn {
-	outline: none;
-	border: none;
-}
-
 #input-el {
 	min-width: 100%;
 	padding: calc(10rem / 16); /* 10px */
 
+	outline: 1px solid var(--clr-primary-green);
 	border: 1px solid var(--clr-primary-green);
 }
 
-#input-btn,
-#delete-btn {
+button {
+	outline: none;
+	border: none;
+}
+
+button {
 	padding: calc(10rem / 16) /* 10px */ calc(20rem / 16); /* 20px */
  
 	background-color: var(--clr-primary-green);
@@ -35,22 +33,21 @@
 	text-transform: uppercase;
 	margin: calc(4rem / 16) 0;
 	cursor: pointer;
+	outline: 1px solid var(--clr-primary-green);
 }
 
 #delete-btn {
 	background-color: #fff;
 	color: var(--clr-primary-green);
-	border: 1px solid var(--clr-primary-green);
 }
 
-#input-el:focus, #input-el:hover,
-#input-btn:focus, #input-btn:hover,
-#delete-btn:focus, #delete-btn:hover {
-	box-shadow: 0 0 .2rem var(--clr-primary-green);
+#input-el:hover, #input-el:focus,
+button:hover,
+button:focus {
+	box-shadow: 0 0 .5rem var(--clr-primary-green);
 }
 
-#input-btn:active,
-#delete-btn:active {
+button:active {
 	transform: translateY(1px);
 }
 
