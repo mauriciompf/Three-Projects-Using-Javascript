@@ -4,6 +4,7 @@
 
 #page-wrap {
 	font-family: Arial, Helvetica, sans-serif;
+	min-width: calc(400rem / 16);
 }
 
 #input-el,
@@ -37,4 +38,17 @@
 
 #input-btn:active {
 	transform: translateY(1px);
+}
+
+#nav-list {
+	list-style: none;
+	padding: 0;
+}
+
+.item-list {
+	margin-top: calc(5rem / 16);
+}
+
+.link {
+	color: #577D3F;
 }
