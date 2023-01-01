@@ -11,3 +11,8 @@ In this course, I intend to understand the fundamentals of the javascript langua
 ## BlackJack Game
 
 ![blackjack](./img/2-blackjack.png)
+
+
+## Chrome Extension
+
+![chrome extension](./img/3-chrome-extension.png)
